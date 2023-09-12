@@ -20,10 +20,15 @@ def wordCashHelper(word, letterList, letterPosition):
         wordCashHelper(word, letterList, letterPosition+1)
     return False
 
-words = "rhubarb offer ice chaos tilt cave tear modify sea exercise presence quip alibi object yesterday mess yes tender"
-wordList = words.split(" ")
-letters = "v b m d h o f r l a s c n u y x q t"
-letterList = letters.split(" ")
+
+
+
+print("Cashwords puzzle solver loaded, enter all the puzzle words:")
+for i in range(1,19):
+    wordList.append(input(f"{i}: "))
+print("Now enter the the letters: ")
+for i in range(1,19):
+    letterList.append(input(f"{i}: "))
 #Expected length 18 for both
 
 
